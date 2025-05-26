@@ -1,0 +1,18 @@
+:root {
+    /* Text Colors */
+    --text-base-dark: #3d3d3d;
+    --text-base-grey: #9f9f9f;
+    --text-base-light: #ffffff;
+
+    /* Bg Colors */
+    --bg-deep-blue: #1d2837;
+    --bg-light-blue: #88a3c9;
+    --bg-blue: #283f5d;
+    --bg-white: #ffffff;
+    --bg-grey: #efefef;
+    --bg-orange: #ff8425;
+
+
+    /* Fonts */
+    --font-montserrat: "Montserrat", sans-serif;
+}

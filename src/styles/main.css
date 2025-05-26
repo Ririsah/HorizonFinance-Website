@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-montserrat);
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid var(--bg-grey);
+    margin: 55px 0;
+}
