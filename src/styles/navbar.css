@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--text-base-light);
+    background-color: var(--bg-white);
     color: var(--text-base-dark);
 }
 
@@ -10,7 +10,7 @@ nav > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 90%;
     padding: 20px 0;
 }
 
@@ -23,11 +23,11 @@ nav > div {
 .img-logo {
     width: 30px;
     margin-right: 5px;
-    opacity: 65%;
+    opacity: 70%;
 }
 
 .title-container > span {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: bolder;
 }
 
@@ -42,12 +42,12 @@ nav > div {
 .nav-links a {
     text-decoration: none;
     color: var(--text-base-dark);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .nav-links > button {
     padding: 10px 30px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-base-light);
     background-color: var(--bg-orange);
     border-radius: 50px;

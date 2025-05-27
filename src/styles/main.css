@@ -6,6 +6,6 @@
 
 hr {
     border: none;
-    border-top: 0.5px solid var(--bg-grey);
+    border-top: 2px solid var(--bg-grey);
     margin: 55px 0;
 }
