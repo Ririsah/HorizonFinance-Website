@@ -43,6 +43,7 @@ nav > div {
     text-decoration: none;
     color: var(--text-base-dark);
     font-size: 1.1rem;
+    transition: opacity 0.3s ease;
 }
 
 .nav-links > button {
