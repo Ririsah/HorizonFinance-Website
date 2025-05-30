@@ -17,7 +17,7 @@
 }
 
 .testemonials-container > div > h2 {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     color: var(--text-base-dark);
     margin: 15px 0 90px 0;
 }
@@ -31,6 +31,9 @@
 .testemonials-container-box > button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 40px;
 }
 
 .testemonials-btn {
@@ -39,12 +42,11 @@
     background-color: transparent;
 }
 
-.testemonials-container-box > div {
+.testemonials-container-box > div > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin: 20px 40px;
     padding-bottom: 30px;
     border-bottom: 5px solid var(--text-base-dark);
 }
@@ -60,7 +62,30 @@
     justify-content: center;
     align-items: center;
     width: 40%;
+}
+
+.person-1 {
     background: url('../assets/images/person_1.jpg') center center / cover no-repeat; 
+}
+
+.person-2 {
+    background: url('../assets/images/person_6.jpg') center center / cover no-repeat; 
+}
+
+.person-3 {
+    background: url('../assets/images/person_3.jpg') center center / cover no-repeat; 
+}
+
+.person-4 {
+    background: url('../assets/images/person_4.jpg') center center / cover no-repeat; 
+}
+
+.person-5 {
+    background: url('../assets/images/person_5.jpg') center center / cover no-repeat; 
+}
+
+.person-6 {
+    background: url('../assets/images/person_2.jpg') center center / cover no-repeat; 
 }
 
 .person-info {
@@ -68,17 +93,17 @@
 }
 
 .testemonials-card-name {
-    background-color: #c9d7e2;
+    background-color: #d5d7da;
     color: var(--bg-deep-blue);
     padding: 20px;
 }
 
 .testemonials-card-name > h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .testemonials-card-name > h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: normal;
 }
 
@@ -93,5 +118,21 @@
 
 .testemonials-card-text > p {
     color: var(--text-base-grey);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+}
+
+/* slider */
+
+.slider {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute; 
+    z-index: 1;
+    transition: transform 1s;
+    width: 101%
 }

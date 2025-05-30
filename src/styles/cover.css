@@ -62,7 +62,7 @@
 }
 
 .nav-cover > li {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 0.9rem;
     color: var(--text-base-grey);
     margin-left: 23px;
@@ -101,12 +101,12 @@
     width: 40%;
     max-width: 400px;
     aspect-ratio: 4 / 3;
-    top: 55%;
-    left: 62%;
+    top: 57%;
+    left: 59%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .div3 > img{
-    width: 600px;
+    width: 700px;
 }
