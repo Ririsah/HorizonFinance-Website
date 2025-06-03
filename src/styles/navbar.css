@@ -4,6 +4,13 @@ nav {
     align-items: center;
     background-color: var(--bg-white);
     color: var(--text-base-dark);
+    width: 100%;
+}
+
+.sticky-nav {
+    position: fixed;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.945);
 }
 
 nav > div {

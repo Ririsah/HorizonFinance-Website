@@ -1,4 +1,8 @@
-const navbar = document.querySelector('.nav-links');
+const navbar = document.querySelector('.nav-container');
+const nav_links = document.querySelector('.nav-links');
+const cover = document.querySelector('.cover-container');
+
+const sections = document.querySelectorAll('.section');
 
 const btn_transf = document.querySelector('.transf');
 const btn_loan = document.querySelector('.loan');
@@ -14,7 +18,31 @@ const btn_slide_left = document.querySelector('.slider-btn-left');
 const btn_slide_right = document.querySelector('.slider-btn-right');
 
 
-//nav animation
+
+//sticky navbar animation
+const navHeight = navbar.getBoundingClientRect().height;
+const stickyNav = function (entries) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) {
+        navbar.classList.add('sticky-nav');
+        cover.style.paddingTop = `${navHeight}px`;
+    } else {
+        navbar.classList.remove('sticky-nav');
+        cover.style.paddingTop = `0`;
+    }
+};
+
+const coverObserver = new IntersectionObserver (stickyNav, {
+    root: null,
+    threshold: 0,
+});
+
+coverObserver.observe(cover);
+
+
+
+//nav links fade animation
 const navOpacityAnimation = function (e, opacity) {
     if (e.target.classList.contains('nav-link')) {
         const selected = e.target;
@@ -28,11 +56,11 @@ const navOpacityAnimation = function (e, opacity) {
     }
 };
 
-navbar.addEventListener('mouseover', function (e) {
+nav_links.addEventListener('mouseover', function (e) {
     navOpacityAnimation(e, 0.3);
 });
 
-navbar.addEventListener('mouseout', function (e) {
+nav_links.addEventListener('mouseout', function (e) {
     navOpacityAnimation(e, 1);
 });
 
@@ -66,6 +94,30 @@ btn_close.addEventListener('click', function () {
 
 
 
+//nav links fade animation
+const revealSection = function (entries, observer) {
+    const [entry] = entries;
+
+    if(!entry.isIntersecting) {
+        return;
+    } else {
+        entry.target.classList.remove('section-hidden');
+    }
+};
+
+const sectionObserver = new IntersectionObserver (revealSection, {
+    root: null,
+    threshold: 0.15,
+});
+
+sections.forEach((section) => {
+    sectionObserver.observe(section);
+    section.classList.add('section-hidden');
+});
+
+
+
+//nav links fade animation
 let currentSlide = 0
 const maxSlide = slides.length;
 const goToSlide = function (slide) {

@@ -110,13 +110,13 @@
 }
 
 .operation-div-1 {
-    border-bottom: 50px solid var(--bg-orange);
+    border-bottom: 10px solid var(--bg-orange);
 }
 
 .operation-div-2 {
-    border-bottom: 50px solid var(--bg-deep-blue);
+    border-bottom: 10px solid var(--bg-deep-blue);
 }
 
 .operation-div-3 {
-    border-bottom: 50px solid var(--bg-light-blue);
+    border-bottom: 10px solid var(--bg-light-blue);
 }

@@ -93,8 +93,8 @@
 }
 
 .testemonials-card-name {
-    background-color: #d5d7da;
-    color: var(--bg-deep-blue);
+    background-color: var(--bg-deep-blue);
+    color: var(--bg-white);
     padding: 20px;
 }
 
