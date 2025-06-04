@@ -1,6 +1,8 @@
 const navbar = document.querySelector('.nav-container');
 const nav_links = document.querySelector('.nav-links');
+const nav_link = document.querySelectorAll('.nav-link');
 const cover = document.querySelector('.cover-container');
+const nav_span = document.querySelector('.nav-span');
 
 const sections = document.querySelectorAll('.section');
 
@@ -26,9 +28,17 @@ const stickyNav = function (entries) {
 
     if (!entry.isIntersecting) {
         navbar.classList.add('sticky-nav');
+        nav_span.classList.add('sticky-span');
+        nav_link.forEach(link => {
+            link.classList.add('sticky-nav-links');
+        });
         cover.style.paddingTop = `${navHeight}px`;
     } else {
         navbar.classList.remove('sticky-nav');
+        nav_span.classList.remove('sticky-span');
+        nav_link.forEach(link => {
+            link.classList.remove('sticky-nav-links');
+        });
         cover.style.paddingTop = `0`;
     }
 };
