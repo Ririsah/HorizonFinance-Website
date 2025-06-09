@@ -136,3 +136,11 @@
     transition: transform 1s;
     width: 101%
 }
+
+/**********************************************************/
+
+@media (max-width: 1500px) {
+    .testemonials-container > div {
+    width: 90%;
+    }
+}

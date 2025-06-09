@@ -101,3 +101,27 @@
 .blue {
     border-bottom: 10px solid var(--bg-light-blue);
 }
+
+/**********************************************************/
+
+@media (max-width: 1500px) {
+    .features-1-container > div {
+    width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .features-1-title > span {
+        font-size: 1rem;
+    }
+
+    .features-1-title > h2 {
+        font-size: 2rem;
+    }
+
+    .features-1-features {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

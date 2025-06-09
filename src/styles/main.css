@@ -19,3 +19,17 @@ hr {
     opacity: 0;
     transform: translateY(8rem);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/**********************************************************/
+
+@media (max-width: 1000px) {
+    hr {
+        border: none;
+        border-top: 2px solid var(--bg-grey);
+        margin: 0;
+    }
+}

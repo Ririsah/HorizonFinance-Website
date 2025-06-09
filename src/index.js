@@ -3,6 +3,8 @@ const nav_links = document.querySelector('.nav-links');
 const nav_link = document.querySelectorAll('.nav-link');
 const cover = document.querySelector('.cover-container');
 const nav_span = document.querySelector('.nav-span');
+const btn_menu_toggle = document.querySelector('.menu-toggle');
+const btn_nav = document.querySelector('.nav-btn');
 
 const sections = document.querySelectorAll('.section');
 
@@ -18,6 +20,30 @@ const slides = document.querySelectorAll('.slide');
 const slider = document.querySelector('.slider');
 const btn_slide_left = document.querySelector('.slider-btn-left');
 const btn_slide_right = document.querySelector('.slider-btn-right');
+
+
+
+
+//menu navbar
+btn_menu_toggle.addEventListener('click', function() {
+    if (nav_links.classList.contains('nav-links-hidden')) {
+        nav_links.classList.remove('nav-links-hidden');
+        nav_link.forEach(link => {link.style.opacity = `1`});
+        btn_nav.style.opacity = `1`;
+    } else {
+        nav_links.classList.add('nav-links-hidden');
+        nav_link.forEach(link => {link.style.opacity = `0`});
+        btn_nav.style.opacity = `0`;
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1500) {
+        nav_links.classList.remove('nav-links-hidden');
+        nav_link.forEach(link => { link.style.opacity = '1'; });
+        btn_nav.style.opacity = '1';
+    }
+});
 
 
 

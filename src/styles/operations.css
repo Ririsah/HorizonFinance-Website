@@ -5,7 +5,7 @@
     background-color: var(--bg-grey);
 }
 
-.operations-container>div {
+.operations-container > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +14,14 @@
     margin: 90px 0;
 }
 
-.operations-container>div>span {
+.operations-container > div > span {
     font-size: 1.5rem;
     font-weight: bolder;
     color: var(--bg-orange);
     align-self: flex-start;
 }
 
-.operations-container>div>h2 {
+.operations-container > div > h2 {
     font-size: 2.7rem;
     color: var(--text-base-dark);
     margin: 15px 0 90px 0;
@@ -119,4 +119,48 @@
 
 .operation-div-3 {
     border-bottom: 10px solid var(--bg-light-blue);
+}
+
+/**********************************************************/
+
+@media (max-width: 1500px) {
+    .operations-container > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .operations-container > div > span {
+        font-size: 1rem;
+    }
+
+    .operations-container > div > h2 {
+        font-size: 2rem;
+    }
+
+    .operations-btn-container {
+        gap: 50px;
+    }
+
+    .operations-btn {
+        border: none;
+        border-radius: 50px;
+        min-width: 80px;
+        height: 80px;
+        padding: 20px 0;
+        font-size: 0;
+    }
+
+    .operation-div {
+        background-color: var(--bg-white);
+        padding: 60px 20px;
+    }
+
+    .operation-div > div > h3 {
+        font-size: 1.1rem;
+    }
+
+    .operation-div > p {
+        font-size: 0.8rem;
+    }
 }

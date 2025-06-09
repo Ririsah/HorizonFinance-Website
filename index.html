@@ -27,22 +27,23 @@
                 <img class="img-logo" src="./src/assets/images/wings2.png" alt="">
                 <span class="nav-span">Horizon</span>
             </div>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Features</a></li>
-                <li><a class="nav-link" href="#">Operations</a></li>
-                <li><a class="nav-link" href="#">Testimonials</a></li>
-                <li><a class="nav-link" href="#">Contact us</a></li>
-                <button>Open account</button>
+            <ul class="nav-links nav-links-hidden">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#operations">Operations</a></li>
+                <li><a class="nav-link" href="#testemonials">Testimonials</a></li>
+                <li><a class="nav-link" href="#footer">Contact us</a></li>
+                <button class="nav-btn">Open account</button>
             </ul>
+            <button class="menu-toggle">☰</button>
         </div>
     </nav>
 
     <!-------------------------------- Cover Section -------------------------------->
-    <section class="cover-container">
+    <section id="home" class="cover-container">
         <img class="bg-img" src="./src/assets/images/bg19.jpg" alt="cover background">
         <div class="div-cover">
-            <div>
+            <div class="cover-text">
                 <p class="div-cover-p1">Traveling is really that great, right? So...</p>
                 <h1>Where do <br> you want to go?</h1>
                 <p class="div-cover-p2">With <span>Horizon Finance</span>, everything is possible!</p>
@@ -53,7 +54,7 @@
     <hr>
 
     <!-------------------------------- Features 1 Section -------------------------------->
-    <section class="features-1-container section">
+    <section id="features" class="features-1-container section">
         <div class="features-1-divs">
             <div class="features-1-title">
                 <span>Why us?</span>
@@ -109,8 +110,8 @@
             <span>Features</span>
             <h2>Banking made modern, with benefits beyond the expected.</h2>
             <div class="feature-card card-orange">
-                <img class="feature-2-img" src="./src/assets/images/feature_5.jpg" alt="">
-                <div>
+                <div class="feature-2-img img-1"></div>
+                <div class="feature-card-text">
                     <img class="check-img" src="./src/assets/images/check_1.png" alt="">
                     <h3>100% digital bank</h3>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply
@@ -120,7 +121,7 @@
                 </div>
             </div>
             <div class="feature-card card-2 card-deep-blue">
-                <div>
+                <div class="feature-card-text">
                     <img class="check-img" src="./src/assets/images/check_2.png" alt="">
                     <h3>You grow with us</h3>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply
@@ -128,11 +129,11 @@
                         literature from 45 BC, making it over 2000 years old.
                     </p>
                 </div>
-                <img class="feature-2-img" src="./src/assets/images/feature_6.jpg" alt="">
+                <div class="feature-2-img img-2"></div>
             </div>
             <div class="feature-card card-blue">
-                <img class="feature-2-img" src="./src/assets/images/feature_7.jpg" alt="">
-                <div>
+                <div class="feature-2-img img-3"></div>
+                <div class="feature-card-text">
                     <img class="check-img" src="./src/assets/images/check_3.png" alt="">
                     <h3>Professional team</h3>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply
@@ -145,7 +146,7 @@
     </section>
 
     <!-------------------------------- Operations Section -------------------------------->
-    <section class="operations-container section">
+    <section id="operations" class="operations-container section">
         <div>
             <span>Operations</span>
             <h2>Your money, your way — with the tools of tomorrow.</h2>
@@ -211,7 +212,7 @@
     </section>
 
     <!-------------------------------- Testemonials Section -------------------------------->
-    <section class="testemonials-container section">
+    <section id="testemonials" class="testemonials-container section">
         <div>
             <span>Testemonials</span>
             <h2>Still not convinced? Hear from those who trust us.</h2>
@@ -352,7 +353,7 @@
     </section>
 
     <!-------------------------------- Footer Section -------------------------------->
-    <footer class="section">
+    <footer id="footer" class="footer-container section">
         <div class="footer-wrapper">
             <div class="footer-div-1">
                 <div class="footer-div-1-box">

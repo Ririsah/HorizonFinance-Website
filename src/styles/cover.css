@@ -16,11 +16,14 @@
     z-index: -1;
 }
 
+.div-cover {
+    width: 100%;
+}
+
 .div-cover > div {
     color: var(--bg-white);
-    margin-bottom: 10%;
-    margin-left: 11%;
-    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 
 .div-cover-p1 {
@@ -39,4 +42,20 @@
 
 .div-cover-p2 > span {
     font-weight: bolder;
+}
+
+/**********************************************************/
+
+@media (max-width: 1000px) {
+    .div-cover > div > h1 {
+        font-size: 3rem;
+    }
+
+    .div-cover-p1 {
+        font-size: 0.9rem;
+    }
+
+    .div-cover-p2 {
+        font-size: 1rem;
+    }
 }
