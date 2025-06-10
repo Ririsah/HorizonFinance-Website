@@ -144,3 +144,52 @@
     width: 90%;
     }
 }
+
+
+@media (max-width: 1000px) {
+    .testemonials-container > div > span {
+        font-size: 1rem;
+    }
+
+    .testemonials-container > div > h2 {
+        font-size: 2rem;
+    }
+
+    .testemonials-container-box > div > div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .slider {
+        min-height: 600px;
+    }
+
+    .testemonials-card {
+        width: 100%;
+    }
+
+    .testemonials-container-box > button {
+        padding: 0 20px;
+    }
+
+    .testemonials-btn {
+        width: 20px;
+    }
+
+    .testemonials-card-name > h4 {
+        font-size: 1rem;
+    }
+
+    .testemonials-card-name > h5 {
+        font-size: 0.7rem;
+    }
+
+    .raiting-img {
+        width: 50px;
+    }
+
+    .testemonials-card-text > p {
+        font-size: 0.6rem;
+    }
+
+}

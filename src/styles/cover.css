@@ -47,6 +47,9 @@
 /**********************************************************/
 
 @media (max-width: 1000px) {
+    .cover-container {
+        height: 80vh;
+    }
     .div-cover > div > h1 {
         font-size: 3rem;
     }

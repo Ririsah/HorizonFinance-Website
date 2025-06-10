@@ -59,6 +59,8 @@ const stickyNav = function (entries) {
             link.classList.add('sticky-nav-links');
         });
         cover.style.paddingTop = `${navHeight}px`;
+        nav_links.style.backgroundColor = `rgba(255, 255, 255, 0.945)`;
+        btn_menu_toggle.style.color = `var(--text-base-dark)`;
     } else {
         navbar.classList.remove('sticky-nav');
         nav_span.classList.remove('sticky-span');
@@ -66,6 +68,8 @@ const stickyNav = function (entries) {
             link.classList.remove('sticky-nav-links');
         });
         cover.style.paddingTop = `0`;
+        nav_links.style.backgroundColor = `rgba(0, 0, 0, 0.637)`;
+        btn_menu_toggle.style.color = `var(--text-base-light)`;
     }
 };
 
