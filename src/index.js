@@ -68,7 +68,7 @@ const stickyNav = function (entries) {
             link.classList.remove('sticky-nav-links');
         });
         cover.style.paddingTop = `0`;
-        nav_links.style.backgroundColor = `rgba(0, 0, 0, 0.637)`;
+        nav_links.style.backgroundColor = `rgb(145, 142, 141)`;
         btn_menu_toggle.style.color = `var(--text-base-light)`;
     }
 };
