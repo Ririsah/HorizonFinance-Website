@@ -161,15 +161,23 @@
     }
 
     .slider {
-        min-height: 600px;
+        min-height: 500px;
     }
 
     .testemonials-card {
         width: 100%;
     }
 
+    .person-img {
+        width: 0%;
+    }
+
+    .person-info {
+        width: 100%;
+    }
+
     .testemonials-container-box > button {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .testemonials-btn {

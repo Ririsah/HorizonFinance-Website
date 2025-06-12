@@ -59,7 +59,7 @@ const stickyNav = function (entries) {
             link.classList.add('sticky-nav-links');
         });
         cover.style.paddingTop = `${navHeight}px`;
-        nav_links.style.backgroundColor = `rgba(255, 255, 255, 0.945)`;
+        nav_links.style.backgroundColor = `rgb(255, 255, 255)`;
         btn_menu_toggle.style.color = `var(--text-base-dark)`;
     } else {
         navbar.classList.remove('sticky-nav');
